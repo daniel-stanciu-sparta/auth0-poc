@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <nav>
+        <li><a href="/">Home</a></li>
+        <li><a href="/secured/">Secured</a></li>
+        <% if(!isAuthenticated){ %>
+            <li><a href="/login/">Log in</a></li>
+        <% } else { %>
+            <li><a href="/logout/">Log out</a></li>
+        <% } %>
+    </nav>
+    </body>
+</html>
+
