@@ -8,10 +8,10 @@ var jwtCheck = jwt.expressjwt({
     cache: true,
     rateLimit: true,
     jwksRequestsPerMinute: 5,
-    jwksUri: 'https://dev-ol8hfzsdip240bhf.uk.auth0.com/.well-known/jwks.json'
+    jwksUri: 'https://________.auth0.com/.well-known/jwks.json' // TODO: insert your own
   }),
   audience: 'http://localhost:4000',
-  issuer: 'https://dev-ol8hfzsdip240bhf.uk.auth0.com/',
+  issuer: 'https://________.auth0.com/', // TODO: insert your own
   algorithms: ['RS256']
 });
 
